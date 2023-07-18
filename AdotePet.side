@@ -1,0 +1,126 @@
+{
+  "id": "f558acab-a33c-4a3b-84eb-ac7a96fde654",
+  "version": "2.0",
+  "name": "AdotePet",
+  "url": "http://localhost/adotepet/formUsuario.php",
+  "tests": [{
+    "id": "acb7f330-a385-4407-8e16-c5872a9d573c",
+    "name": "formUsuario",
+    "commands": [{
+      "id": "f4619031-0c8b-4254-9d3f-ed90f45d4bbb",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/adotepet/formUsuario.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd7ed8db-4314-4b23-b6d6-29993bd7643f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x860",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12015068-c601-4aef-a592-e48739036039",
+      "comment": "",
+      "command": "click",
+      "target": "id=cpf",
+      "targets": [
+        ["id=cpf", "id"],
+        ["name=cpf", "name"],
+        ["css=#cpf", "css:finder"],
+        ["xpath=//input[@id='cpf']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2f2c847-5789-499b-bdc4-39c4b83db76d",
+      "comment": "",
+      "command": "type",
+      "target": "id=cpf",
+      "targets": [
+        ["id=cpf", "id"],
+        ["name=cpf", "name"],
+        ["css=#cpf", "css:finder"],
+        ["xpath=//input[@id='cpf']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "121231212313"
+    }, {
+      "id": "2519498d-7a20-421d-bb4c-bf5227ddb1a3",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Thalita de Oliveira Ferreira"
+    }, {
+      "id": "37f70702-76b0-4659-901f-c505cc353cb0",
+      "comment": "",
+      "command": "type",
+      "target": "id=endereco",
+      "targets": [
+        ["id=endereco", "id"],
+        ["name=endereco", "name"],
+        ["css=#endereco", "css:finder"],
+        ["xpath=//input[@id='endereco']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "Paulo Afonso Tristão"
+    }, {
+      "id": "e0e17e43-b233-4fcd-aeeb-0ac54b620023",
+      "comment": "",
+      "command": "type",
+      "target": "id=telefone",
+      "targets": [
+        ["id=telefone", "id"],
+        ["name=telefone", "name"],
+        ["css=#telefone", "css:finder"],
+        ["xpath=//input[@id='telefone']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "3291203382"
+    }, {
+      "id": "64093e95-cbce-4ed9-aeac-4d5a32a031e9",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "6e40c47f-4c92-4420-a55c-3c55633316de",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Usuário cadastrado com sucesso!!!",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4e79db7e-686e-4ff5-99eb-4a67dd6f9b0b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["acb7f330-a385-4407-8e16-c5872a9d573c"]
+  }],
+  "urls": ["http://localhost/adotepet/formUsuario.php"],
+  "plugins": []
+}
